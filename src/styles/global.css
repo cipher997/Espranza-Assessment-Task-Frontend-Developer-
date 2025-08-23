@@ -1,0 +1,192 @@
+/* --------------------------
+   Global Reset & Base
+-------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #f8fafc; /* soft neutral background */
+  color: #1e293b; /* slate gray text */
+  min-height: 100vh;
+}
+
+/* --------------------------
+   Typography
+-------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #0f172a; /* darker headings */
+}
+
+p {
+  margin-bottom: 0.75rem;
+  color: #334155;
+}
+
+/* --------------------------
+   Layout Utilities
+-------------------------- */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* --------------------------
+   Buttons
+-------------------------- */
+button {
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb; /* blue-600 */
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.95rem;
+}
+
+button:hover {
+  background: #1d4ed8; /* darker blue */
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Secondary button */
+button.secondary {
+  background: #e2e8f0;
+  color: #1e293b;
+}
+
+button.secondary:hover {
+  background: #cbd5e1;
+}
+
+/* --------------------------
+   Inputs & Forms
+-------------------------- */
+input, select {
+  /* width: 100%; */
+  /* padding: 0.6rem 0.8rem; */
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* --------------------------
+   Cards (Hotel, Results, etc.)
+-------------------------- */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* --------------------------
+   Hotel Specific
+-------------------------- */
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotel-header {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.hotel-img {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hotel-info h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.hotel-info p {
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+}
+
+.price {
+  font-weight: 600;
+  color: #16a34a; /* green */
+  margin-top: 0.4rem;
+}
+
+.hotel-details {
+  margin-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 1rem;
+}
+
+.room-option {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.room-option:last-child {
+  border-bottom: none;
+}
+
+.room-img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.selected-room-banner {
+  background: #e0f2fe;
+  color: #075985;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;
+}

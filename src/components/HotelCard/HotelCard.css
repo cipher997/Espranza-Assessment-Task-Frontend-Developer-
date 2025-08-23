@@ -1,0 +1,51 @@
+.hotel-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background: #fff;
+}
+
+.hotel-header {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.hotel-img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.hotel-info {
+  flex: 1;
+}
+
+.price {
+  font-weight: bold;
+  color: green;
+}
+
+.hotel-details {
+  padding: 1rem;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+
+.room-option {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
+
+.room-img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+}
