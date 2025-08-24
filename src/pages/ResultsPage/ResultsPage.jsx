@@ -94,49 +94,51 @@ export default function ResultsPage() {
   return (
     <div className="results-page">
       <h1>Search Results</h1>
-
+      <p>{filteredHotels.length} hotels found</p>
+      <div className="divider"></div>
       {/* ✅ FILTERS + SORT CONTROLS */}
       <div className="filters">
-        <label>
-          Min Rating:
+        <div className="filter-group">
+          <label>⭐ Min Rating:</label>
           <select value={minRating} onChange={(e) => setMinRating(Number(e.target.value))}>
             <option value={0}>Any</option>
             <option value={3}>3★+</option>
             <option value={4}>4★+</option>
             <option value={5}>5★</option>
           </select>
-        </label>
+        </div>
 
-        <label>
-          Max Price:
+        <div className="filter-group">
+          <label>💰 Max Price:</label>
           <input
             type="number"
             value={maxPrice}
             onChange={(e) => setMaxPrice(Number(e.target.value))}
           />
-        </label>
+        </div>
 
-        <label>
-          Sort By:
+        <div className="filter-group">
+          <label>↕ Sort By:</label>
           <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
             <option value="price-asc">Price: Low → High</option>
             <option value="price-desc">Price: High → Low</option>
             <option value="rating">Rating: High → Low</option>
             <option value="name">Name (A → Z)</option>
           </select>
-        </label>
+        </div>
       </div>
 
+
       {/* ✅ HOTEL GRID */}
-{filteredHotels.length === 0 ? (
-  <p>No hotels match your filters.</p>
-) : (
-  <div className="hotels-grid">
-    {filteredHotels.map((hotel) => (
-      <HotelCard key={hotel.id} hotel={hotel} />
-    ))}
-  </div>
-)}
+      {filteredHotels.length === 0 ? (
+        <p>No hotels match your filters.</p>
+      ) : (
+        <div className="hotels-grid">
+          {filteredHotels.map((hotel) => (
+            <HotelCard key={hotel.id} hotel={hotel} />
+          ))}
+        </div>
+      )}
 
     </div>
   );

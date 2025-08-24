@@ -40,27 +40,27 @@ export default function SearchForm() {
     setSuggestions([]);
   };
 
-const handleSubmit = (e) => {
-  e.preventDefault();
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-  // build occupancy list: one object per room
-  const occupancies = Array.from({ length: rooms }, () => ({
-    rooms: 1,
-    adults,
-    children: 0,
-    paxes: Array.from({ length: adults }, (_, i) => ({
-      type: "AD",
-      age: 30 + i,
-    })),
-  }));
+    // build occupancy list: one object per room
+    const occupancies = Array.from({ length: rooms }, () => ({
+      rooms: 1,
+      adults,
+      children: 0,
+      paxes: Array.from({ length: adults }, (_, i) => ({
+        type: "AD",
+        age: 30 + i,
+      })),
+    }));
 
-  const formData = { destinationName, destinationId, checkIn, checkOut, occupancies };
-  setSearchData(formData);
+    const formData = { destinationName, destinationId, checkIn, checkOut, occupancies };
+    setSearchData(formData);
 
-  navigate(
-    `/results?destination=${encodeURIComponent(destinationName)}&checkIn=${checkIn}&checkOut=${checkOut}&destinationId=${destinationId}`
-  );
-};
+    navigate(
+      `/results?destination=${encodeURIComponent(destinationName)}&checkIn=${checkIn}&checkOut=${checkOut}&destinationId=${destinationId}`
+    );
+  };
 
 
   return (

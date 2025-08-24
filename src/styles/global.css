@@ -7,21 +7,30 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background: #f8fafc; /* soft neutral background */
-  color: #1e293b; /* slate gray text */
+  background: #f8fafc;
+  /* soft neutral background */
+  color: #1e293b;
+  /* slate gray text */
   min-height: 100vh;
 }
 
 /* --------------------------
    Typography
 -------------------------- */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
-  color: #abadb2; /* darker headings */
+  color: #abadb2;
+  /* darker headings */
 }
 
 p {
@@ -57,7 +66,8 @@ button {
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   border: none;
-  background: #2563eb; /* blue-600 */
+  background: #2563eb;
+  /* blue-600 */
   color: #fff;
   font-weight: 500;
   transition: all 0.2s ease-in-out;
@@ -65,9 +75,10 @@ button {
 }
 
 button:hover {
-  background: #1d4ed8; /* darker blue */
+  background: #1d4ed8;
+  /* darker blue */
   transform: translateY(-1px);
-  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
 
 button:disabled {
@@ -88,7 +99,8 @@ button.secondary:hover {
 /* --------------------------
    Inputs & Forms
 -------------------------- */
-input, select {
+input,
+select {
   /* width: 100%; */
   /* padding: 0.6rem 0.8rem; */
   border: 1px solid #cbd5e1;
@@ -97,7 +109,8 @@ input, select {
   transition: border-color 0.2s;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
   outline: none;
   border-color: #2563eb;
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
@@ -109,7 +122,7 @@ input:focus, select:focus {
 .card {
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   padding: 1.25rem;
   margin-bottom: 1.5rem;
   transition: transform 0.2s ease;
@@ -117,7 +130,7 @@ input:focus, select:focus {
 
 .card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 /* --------------------------
@@ -152,7 +165,8 @@ input:focus, select:focus {
 
 .price {
   font-weight: 600;
-  color: #16a34a; /* green */
+  color: #16a34a;
+  /* green */
   margin-top: 0.4rem;
 }
 

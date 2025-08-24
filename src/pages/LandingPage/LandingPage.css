@@ -1,63 +1,76 @@
 .landing-page {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-  /* Beautiful background image */
-  background: url("../../assets//landingpage.jpg") 
-    no-repeat center center/cover;
-  position: relative;
-  color: white;
-  overflow: hidden;
+    /* Beautiful background image */
+    background: url("../../assets//landingpage.jpg") no-repeat center center/cover;
+    position: relative;
+    color: white;
+    overflow: hidden;
 }
 
 /* Dark overlay for readability */
 .landing-page::before {
-  content: "";
-  position: absolute;
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  height: 100%;
-  /* background: rgba(0, 0, 0, 0.55); */
-  z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: rgba(0, 0, 0, 0.55); */
+    z-index: -1;
 }
 
 /* Title styling */
 .landing-page h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  z-index: 1;
-  text-shadow: 0px 4px 8px rgba(0,0,0,0.6);
-  letter-spacing: 2px;
-  animation: fadeInDown 1s ease-in-out;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    z-index: 1;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    letter-spacing: 2px;
+    animation: fadeInDown 1s ease-in-out;
 }
 
 /* Search form container */
 .landing-page .search-form-container {
-  z-index: 1;
-  width: 90%;
-  max-width: 700px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(6px);
-  padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0px 8px 24px rgba(0,0,0,0.3);
-  animation: fadeInUp 1s ease-in-out;
+    z-index: 1;
+    width: 90%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-in-out;
 }
 
 /* Animations */
 @keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-30px); }
-  to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
