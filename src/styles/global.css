@@ -21,7 +21,7 @@ html, body {
 -------------------------- */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
-  color: #0f172a; /* darker headings */
+  color: #abadb2; /* darker headings */
 }
 
 p {
@@ -34,7 +34,7 @@ p {
 -------------------------- */
 .container {
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 1rem;
 }
