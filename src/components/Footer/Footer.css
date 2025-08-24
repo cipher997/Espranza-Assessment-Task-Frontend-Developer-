@@ -1,0 +1,78 @@
+.app-footer {
+  background: #1c1c1c;
+  color: #ddd;
+  padding: 2rem 1rem 1rem;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section h3 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.footer-section h4 {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.footer-section p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #bbb;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-section ul li a:hover {
+  color: #ff7e5f;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.social-icons a {
+  color: #bbb;
+  font-size: 1.2rem;
+  transition: color 0.2s;
+}
+
+.social-icons a:hover {
+  color: #ff7e5f;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #aaa;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding-top: 1rem;
+}
