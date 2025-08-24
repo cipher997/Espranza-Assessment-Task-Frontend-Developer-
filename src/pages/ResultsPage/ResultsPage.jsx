@@ -127,12 +127,17 @@ export default function ResultsPage() {
         </label>
       </div>
 
-      {/* ✅ HOTEL LIST */}
-      {filteredHotels.length === 0 ? (
-        <p>No hotels match your filters.</p>
-      ) : (
-        filteredHotels.map((hotel) => <HotelCard key={hotel.id} hotel={hotel} />)
-      )}
+      {/* ✅ HOTEL GRID */}
+{filteredHotels.length === 0 ? (
+  <p>No hotels match your filters.</p>
+) : (
+  <div className="hotels-grid">
+    {filteredHotels.map((hotel) => (
+      <HotelCard key={hotel.id} hotel={hotel} />
+    ))}
+  </div>
+)}
+
     </div>
   );
 }
