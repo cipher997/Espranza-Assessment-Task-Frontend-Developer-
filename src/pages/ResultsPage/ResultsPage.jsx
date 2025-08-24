@@ -88,7 +88,10 @@ export default function ResultsPage() {
     return list;
   }, [hotels, minRating, maxPrice, sortBy]);
 
-  if (loading) return <p>Loading hotels...</p>;
+  if (loading) return <div className="loading-container">
+      <div className="loading-spinner"></div>
+      <p>Loading hotels…</p>
+    </div>
   if (error) return <p>Error: {error}</p>;
 
   return (
